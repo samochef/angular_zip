@@ -1,0 +1,18 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  readonly_paths:
+    - src/app/navigationBar/navigationBar.component.spec.ts
+    - src/app/app.component.spec.ts
+  scoring:
+    command: "npm test"
+    files:
+      - unit.xml
+  ide_config:
+    default_open_files:
+      - src/app/navigationBar/navigationBar.component.ts
+      - src/app/navigationBar/navigationBar.component.html
+    project_menu:
+      run: npm start
+      install: npm install
+      test: npm test
